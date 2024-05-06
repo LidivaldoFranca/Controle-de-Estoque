@@ -1,0 +1,31 @@
+"""
+- FALTA INSERIR UMA GERAÇÃO DE CÓDIGO DO PRODUTO AUTOMÁTICO.
+- FALTA MONTAR UMA LISTA DE ITENS FIXO QUE NÃO POSSAM SER ALTERADOS. PARA MANTER PADRÃO.
+- INSERIR CAMPO DE PESQUISA DO PRODUTO.
+
+"""
+
+#Cadastramento de materiais
+
+def cadastrar_material():
+    material = {}
+    material['codigo'] = input("Código do Material: ")
+    material['nome'] = input("Digite o nome do material: ")
+    material['descricao'] = input("Digite a descrição do material: ")
+    material['quantidade'] = int(input("Digite a quantidade em estoque: "))
+    return material
+
+def exibir_material(material):
+    print("\nInformações do material:")
+    print(f"Código: {material['codigo']}")
+    print(f"Nome: {material['nome']}")
+    print(f"Descrição: {material['descricao']}")
+    print(f"Quantidade em estoque: {material['quantidade']}")
+
+novo_material = cadastrar_material()
+
+exibir_material(novo_material)
+
+print("\n")
+print("---------- TESTE (2 ----------")
+print("\n")
